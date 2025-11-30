@@ -1,0 +1,18 @@
+[package]
+name = "AlgorithmStudy-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.53", features = ["derive"] }
+rstest = "0.26.1"
+tracing = "0.1.43"
+tracing-subscriber = { version = "0.3.22", features = ["fmt", "env-filter", "std"]}
+
+
+[[bin]]
+name = "longestSubstringWithoutRepeatingCharacters"
+path = "src/array/longestSubstringWithoutRepeatingCharacters/main.rs"
+
+# Add additional binaries as needed:
